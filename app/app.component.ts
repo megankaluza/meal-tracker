@@ -7,7 +7,7 @@ import { Meal } from './meal.model';
   <div class="container">
     <h1>Halloween Mega Meals</h1>
     <hr>
-    
+
     <meal-list
       [childMealList]="masterMealList"
       (clickSender)="showDetails($event)"
@@ -25,9 +25,9 @@ import { Meal } from './meal.model';
 
 export class AppComponent {
   public masterMealList: Meal[] = [
-      new Meal("Pumpkin Spiced Salad", 310),
-      new Meal("Pumpkin Spiced Latte", 210),
-      new Meal("Ghoul Doughtnut", 400)
+      new Meal("Pumpkin Spiced Salad", "Contains pears, apples, walnuts, and pumpkin spice", 310),
+      new Meal("Pumpkin Spiced Latte", "Contains pumpkin spiced flavored almond milk", 210),
+      new Meal("Ghoul Doughtnut", "Contains sprinkles and frosting", 400)
   ];
   selectedMeal: Meal = null;
   showDetails(clickedMeal: Meal) {
