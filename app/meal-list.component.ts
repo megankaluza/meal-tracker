@@ -11,7 +11,7 @@ import { Meal } from './meal.model';
     <option value="medium">300-500</option>
     <option value="low">300</option>
   </select>
-    <div *ngFor="let currentMeal of childMealList">
+    <div *ngFor="let currentMeal of childMealList | calories:selectedCalories" >
       <h2>{{ currentMeal.name }}</h2>
       <h3>{{ currentMeal.description }}</h3>
       <p>{{ currentMeal.id }} calories</p>
@@ -23,15 +23,15 @@ import { Meal } from './meal.model';
 export class MealListComponent {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
-  // public selectedCalories: string = "high";
-  editButtonHasBeenClicked(mealToEdit: Meal) {
-  this.clickSender.emit(mealToEdit);
+
+  public selectedCalories: string = "high";
+  onChange(optionFromMenu) {
+  this.selectedCalories = optionFromMenu;
+
+  console.log(this.selectedCalories);
 }
 
-// onChange(optionFromMenu) {
-// this.selectedCalories = optionFromMenu;
-// console.log(this.selectedCalories);
-// }
-
-
+  editButtonHasBeenClicked(mealToEdit: Meal) {
+  this.clickSender.emit(mealToEdit);
+  }
 }
