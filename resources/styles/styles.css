@@ -2,11 +2,16 @@ $orange: orange;
 $green: #8AA399;
 $black: #000;
 $white: #fff;
+$lightpurple: #8FA6CB;
 
 body {
   width: 100%;
   background-color: $green;
 }
+
+/*header {
+  background-color: $lightpurple;
+}*/
 
 h1 {
   color: $white;
@@ -19,6 +24,12 @@ h2 {
 }
 
 h3,
-p {
+p,
+label, {
   font-family: 'Advent Pro', sans-serif;
+}
+
+input {
+  font-family: 'Advent Pro', sans-serif;
+  color: $orange;
 }

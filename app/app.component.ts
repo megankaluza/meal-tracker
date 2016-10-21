@@ -5,9 +5,10 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
   <div class="container">
+  <header>
     <h1>Halloween Mega Meals</h1>
     <hr>
-
+  </header>
     <meal-list
       [childMealList]="masterMealList"
       (clickSender)="showDetails($event)"
