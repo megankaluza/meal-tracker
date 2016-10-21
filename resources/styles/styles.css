@@ -1,4 +1,24 @@
+$orange: orange;
+$green: #8AA399;
+$black: #000;
+$white: #fff;
+
+body {
+  width: 100%;
+  background-color: $green;
+}
+
 h1 {
-  color: orange;
+  color: $white;
   text-align: center;
+  font-family: 'Creepster', cursive;
+}
+
+h2 {
+  font-family: 'Creepster', cursive;
+}
+
+h3,
+p {
+  font-family: 'Advent Pro', sans-serif;
 }
