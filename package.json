@@ -1,5 +1,5 @@
 {
-  "name": "angular2-skeleton",
+  "name": "meal_tracker",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -45,15 +45,15 @@
     "typescript": "^1.8.10",
     "typings": "^1.3.2"
   },
-  "description": "#### _Angular Template for Epicodus_",
+  "description": "#### _Mega Meal Tracker Epicodus Week 2: JavaScript Angular 2 Solo Project_",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/megankaluza/javascript-template.git"
+    "url": "git+"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/megankaluza/javascript-template/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/megankaluza/javascript-template#readme"
+  "homepage": ""
 }

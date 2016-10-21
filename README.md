@@ -1,6 +1,6 @@
-# _Angular Template_
+# _Mega Meal Tracker_
 
-#### _Angular Template for Epicodus_
+#### _Mega Meal Tracker Epicodus Week 2: JavaScript Angular 2 Solo Project_
 
 #### By _**Megan Kaluza**_
 
@@ -17,7 +17,7 @@
 
 * _Clone this repository_
     * _To clone using Git, use the following terminal command:_
-    _https://github.com/megankaluza/angular2_skeleton_template.git_
+    _https://github.com/megankaluza/https://github.com/megankaluza/meal_tracker.git
 * _Open in text editor of your choice_
 
 ## Known Bugs
