@@ -13,5 +13,11 @@ export class CaloriesPipe implements PipeTransform {
       return input;
     }
     console.log(input);
+    var output: Meal [] = [];
+    for(var i = 0; i < input.length; i++){
+      if(selectedCalories === "medium"){
+      }
+    }
+    return input;
  }
 }
