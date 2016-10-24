@@ -21,7 +21,7 @@ import { Meal } from './meal.model';
       <option value="<300"><300</option>
       </select>
       <button (click)="
-        addClicked(newDescription.value, newId.value);
+        addClicked(newDescription.value, newCalorie.value);
         newDescription.value='';
         newId.value='';
       ">Add</button>
@@ -31,8 +31,8 @@ import { Meal } from './meal.model';
 
 export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();
-  addClicked(description: string, id: number) {
-    var newMealToAdd: Meal = new Meal(name, description, id);
+  addClicked(description: string, calorie: number) {
+    var newMealToAdd: Meal = new Meal(name, description, calorie);
     this.newMealSender.emit(newMealToAdd);
   }
 }

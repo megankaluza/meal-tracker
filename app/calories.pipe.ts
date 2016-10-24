@@ -16,25 +16,25 @@ export class CaloriesPipe implements PipeTransform {
     var output: Meal [] = [];
     if(selectedCalories === ">500"){
       for(var i = 0; i < input.length; i++){
-        if (input[i].done === true){
+        if (input[i].calorie >= 500){
           output.push(input[i]);
         }
       }
       return output
-    } else if (selectedCalories === "<300") {
+    } else if(selectedCalories === "<300") {
       for(var i = 0; i < input.length; i++) {
-        if (input[i].done === true){
+        if (input[i].calorie < 500){
           output.push(input[i]);
         }
       }
       return output;
-    } else if(selectedCalories === "300-500") {
-      for(var i = 0; i < input.length; i++) {
-        if (input[i].done === true){
+    } else if(selectedCalories === "300-500"){
+      for(var i = 0; i < input.length; i++){
+        if(input[i].calorie >= 300 && input[i].calorie <= 500){
           output.push(input[i]);
         }
       }
-      return input;
-      }
+      return output;
     }
   }
+}

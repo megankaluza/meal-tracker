@@ -26,9 +26,9 @@ import { Meal } from './meal.model';
 
 export class AppComponent {
   public masterMealList: Meal[] = [
-      new Meal("Pumpkin Spiced Salad", "Contains pears, apples, walnuts, and pumpkin spice", "300-500"),
-      new Meal("Pumpkin Spiced Latte", "Contains pumpkin spiced flavored almond milk", ">500"),
-      new Meal("Ghoul Doughtnut", "Contains sprinkles and frosting", "<300")
+      new Meal("Pumpkin Spiced Salad", "Contains pears, apples, walnuts, and pumpkin spice", 200),
+      new Meal("Pumpkin Spiced Latte", "Contains pumpkin spiced flavored almond milk", 500),
+      new Meal("Ghoul Doughtnut", "Contains sprinkles and frosting", 300)
   ];
   selectedMeal: Meal = null;
   showDetails(clickedMeal: Meal) {

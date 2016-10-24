@@ -15,7 +15,7 @@ import { Meal } from './meal.model';
       </div>
       <div>
         <label>Calories:</label>
-        <select [(ngModel)]="childSelectedMeal.id">
+        <select [(ngModel)]="childSelectedMeal.calorie">
         <option value=">500">>500</option>
         <option value="300-500" selected="selected">300-500</option>
         <option value="<300"><300</option>
