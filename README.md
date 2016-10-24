@@ -9,6 +9,7 @@
 * _npm install_
 * _npm init_
 * _bower install_
+* _bower init_
 * _gulp build_
 * _gulp serve_
 

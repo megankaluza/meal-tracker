@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from './meal.model';
-
 @Component({
   selector: 'edit-meal',
   template: `
@@ -15,12 +14,12 @@ import { Meal } from './meal.model';
         <input [(ngModel)]="childSelectedMeal.description">
       </div>
       <div>
-        <!--<label>Calories:</label>
+        <label>Calories:</label>
         <select [(ngModel)]="childSelectedMeal.id">
         <option value="high">500 or more</option>
         <option value="medium" selected="selected">300 - 500</option>
         <option value="low">less than 300</option>
-        </select>-->
+        </select>
         <button (click)="doneClicked()">Done</button>
       </div>
     </div>
