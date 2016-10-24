@@ -16,7 +16,7 @@ export class CaloriesPipe implements PipeTransform {
     var output: Meal [] = [];
     if(selectedCalories === ">500"){
       for(var i = 0; i < input.length; i++){
-        if (input[i].done === false){
+        if (input[i].done === true){
           output.push(input[i]);
         }
       }
@@ -28,8 +28,13 @@ export class CaloriesPipe implements PipeTransform {
         }
       }
       return output;
-    } else {
+    } else if(selectedCalories === "300-500") {
+      for(var i = 0; i < input.length; i++) {
+        if (input[i].done === true){
+          output.push(input[i]);
+        }
+      }
       return input;
+      }
     }
   }
-}
