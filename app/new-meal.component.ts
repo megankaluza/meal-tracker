@@ -15,15 +15,16 @@ import { Meal } from './meal.model';
     </div>
     <div>
       <label>Calories:</label>
-      <select #newId>
+      <select #newCalorie>
       <option value=">500">>500</option>
       <option value="300-500" selected="selected">300-500</option>
       <option value="<300"><300</option>
       </select>
       <button (click)="
-        addClicked(newDescription.value, newCalorie.value);
+        addClicked(newName.value, newDescription.value, newCalorie.value);
+        newName.value='';
         newDescription.value='';
-        newId.value='';
+        newCalorie.value='';
       ">Add</button>
     </div>
   `
@@ -31,7 +32,7 @@ import { Meal } from './meal.model';
 
 export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();
-  addClicked(description: string, calorie: number) {
+  addClicked(name: string, description: string, calorie: number) {
     var newMealToAdd: Meal = new Meal(name, description, calorie);
     this.newMealSender.emit(newMealToAdd);
   }
