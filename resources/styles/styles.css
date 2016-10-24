@@ -16,7 +16,7 @@ div {
 }
 
 h1 {
-  color: $white;
+  color: $orange;
   text-align: center;
   font-family: 'Creepster', cursive;
 }
@@ -33,5 +33,4 @@ label, {
 
 input {
   font-family: 'Advent Pro', sans-serif;
-  color: $orange;
 }

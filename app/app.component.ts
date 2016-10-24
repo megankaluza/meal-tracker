@@ -6,7 +6,7 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
   <header>
-    <h1>Halloween Mega Meals</h1>
+    <h1>Halloween<img src="resources/img/pumpkin.png" alt="Pumpkin">Meals</h1>
     <hr>
   </header>
     <meal-list
