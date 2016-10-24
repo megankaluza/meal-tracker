@@ -15,7 +15,11 @@ import { Meal } from './meal.model';
     </div>
     <div>
       <label>Calories:</label>
-      <input #newId>
+      <select #newId>
+      <option value=">500">>500</option>
+      <option value="300-500" selected="selected">300-500</option>
+      <option value="<300"><300</option>
+      </select>
       <button (click)="
         addClicked(newDescription.value, newId.value);
         newDescription.value='';

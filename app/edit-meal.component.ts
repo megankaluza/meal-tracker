@@ -16,9 +16,9 @@ import { Meal } from './meal.model';
       <div>
         <label>Calories:</label>
         <select [(ngModel)]="childSelectedMeal.id">
-        <option value="high">500 or more</option>
-        <option value="medium" selected="selected">300 - 500</option>
-        <option value="low">less than 300</option>
+        <option value=">500">>500</option>
+        <option value="300-500" selected="selected">300-500</option>
+        <option value="<300"><300</option>
         </select>
         <button (click)="doneClicked()">Done</button>
       </div>
