@@ -4,15 +4,6 @@
 
 #### By _**Megan Kaluza**_
 
-## Description
-
-* _npm install_
-* _npm init_
-* _bower install_
-* _bower init_
-* _gulp build_
-* _gulp serve_
-
 
 ## Setup/Installation Requirements
 
@@ -20,6 +11,11 @@
     * _To clone using Git, use the following terminal command:_
     _https://github.com/megankaluza/https://github.com/megankaluza/meal_tracker.git
 * _Open in text editor of your choice_
+* _Open command line:_
+* _npm install_
+* _bower install_
+* _gulp build_
+* _gulp serve_
 
 ## Known Bugs
 
