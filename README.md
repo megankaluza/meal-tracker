@@ -4,12 +4,31 @@
 
 #### By _**Megan Kaluza**_
 
+![screenshot](screen_shot.png)
+
+## Description
+
+_Objectives:_
+
+* _Is the app structured in a logical way, including a model, multiple components and TypeScript?_
+
+* _Can the application create and edit new instances of a model?_
+
+* _Does the app allow you to view a list of foods?_
+
+* _Can the application filter foods based on their calories?_
+
+* _Are dependencies managed with npm and Bower?_
+
+* _Does the app include a gulp-based asset pipeline with a development server?_
+
+* _Is the project in a presentable, portfolio-quality state?_
 
 ## Setup/Installation Requirements
 
 * _Clone this repository_
     * _To clone using Git, use the following terminal command:_
-    _https://github.com/megankaluza/https://github.com/megankaluza/meal_tracker.git
+    _https://github.com/megankaluza/https://github.com/megankaluza/meal-tracker.git
 * _Open in text editor of your choice_
 * _Open command line:_
 * _npm install_
