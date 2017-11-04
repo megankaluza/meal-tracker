@@ -28,7 +28,7 @@ _Objectives:_
 
 * _Clone this repository_
     * _To clone using Git, use the following terminal command:_
-    _https://github.com/megankaluza/https://github.com/megankaluza/meal-tracker.git
+    _https://github.com/megankaluza/meal-tracker.git
 * _Open in text editor of your choice_
 * _Open command line:_
 * _npm install_
